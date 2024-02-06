@@ -267,7 +267,7 @@ a:hover {
 /*------/ Owl Carousel /------*/
 
 .owl-theme .owl-dots {
-  text-align: center;
+  text-align: bottom;
   margin-top: 18px;
 }
 
