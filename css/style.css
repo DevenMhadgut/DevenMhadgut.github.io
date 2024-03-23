@@ -1365,7 +1365,7 @@ body{
 	font-weight: 300;
 	line-height: 20px;
 }
-.gal-container .modal.fade .modal-dialog {
+/* .gal-container .modal.fade .modal-dialog {
     -webkit-transform: scale(0.1);
     -moz-transform: scale(0.1);
     -ms-transform: scale(0.1);
@@ -1375,7 +1375,7 @@ body{
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s; 
-}
+} */
 
 .gal-container .modal.fade.in .modal-dialog {
     -webkit-transform: scale(1);
