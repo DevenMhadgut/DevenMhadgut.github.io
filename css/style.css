@@ -1411,3 +1411,14 @@ footer{
 footer a,footer a:hover{
     color: #88C425;
 }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+}
