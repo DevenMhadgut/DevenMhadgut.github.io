@@ -15,7 +15,54 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* Ensures the overlays stay within the image box */
+    .img-relative {
+      position: relative;
+      display: block;
+      overflow: hidden;
+    }
+
+    /* Watermark Style */
+    .watermark-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-15deg); /* Centered and slightly tilted */
+      color: rgba(255, 255, 255, 0.4); /* White with low opacity */
+      font-size: 1.5rem;
+      font-weight: bold;
+      pointer-events: none; /* Allows click to pass through to the image */
+      text-transform: uppercase;
+      white-space: nowrap;
+      z-index: 10;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    }
+
+    /* Location Tag Style */
+    .location-overlay {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      pointer-events: none;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .location-overlay i {
+      color: #ffc107; /* Gold color for the map icon */
+    }
+  </style>
 </head>
+
 <body>
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
@@ -50,56 +97,114 @@
       </div>
     </div>
   </nav>
+
   <section class="blog-wrapper sect-pt4" id="blog">
     <div class="container gal-container">
       <div class="row">
+        
         <div class="col-md-8 col-sm-8 co-xs-12 gal-item">
           <div class="box">
-            <a href="img/Sunsets/20210603_191821.jpg" data-lightbox="gallery-sunsets" data-title="This is the first one on my Gallery">
+            <a href="img/Sunsets/20210603_191821.jpg" class="img-relative" data-lightbox="gallery-sunsets" 
+               data-title="This is the first one on my Gallery - Boulder, CO">
+              
               <img src="img/Sunsets/20210603_191821.jpg" class="img-fluid" alt="Sunset 1">
+              
+              <div class="watermark-overlay">© Deven Mhadgut</div>
+              
+              <div class="location-overlay">
+                <i class="fa fa-map-marker"></i> Boulder, CO
+              </div>
             </a>
           </div>
         </div>
+
         <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
           <div class="box">
-            <a href="img/Sunsets/20210930_180559.jpg" data-lightbox="gallery-sunsets" data-title="This is the second one on my Gallery">
+            <a href="img/Sunsets/20210930_180559.jpg" class="img-relative" data-lightbox="gallery-sunsets" 
+               data-title="This is the second one on my Gallery - Denver, CO">
+              
               <img src="img/Sunsets/20210930_180559.jpg" class="img-fluid" alt="Sunset 2">
+              
+              <div class="watermark-overlay">© Deven Mhadgut</div>
+              
+              <div class="location-overlay">
+                <i class="fa fa-map-marker"></i> Denver, CO
+              </div>
             </a>
           </div>
         </div>
+
         <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
           <div class="box">
-             <a href="img/Sunsets/20210930_180349.jpg" data-lightbox="gallery-sunsets" data-title="This is the third one on my Gallery">
+             <a href="img/Sunsets/20210930_180349.jpg" class="img-relative" data-lightbox="gallery-sunsets" 
+                data-title="This is the third one on my Gallery - Golden, CO">
+              
               <img src="img/Sunsets/20210930_180349.jpg" class="img-fluid" alt="Sunset 3">
+              
+              <div class="watermark-overlay">© Deven Mhadgut</div>
+              
+              <div class="location-overlay">
+                <i class="fa fa-map-marker"></i> Golden, CO
+              </div>
             </a>
           </div>
         </div>
+
         <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
           <div class="box">
-            <a href="img/Sunsets/20210930_180900.jpg" data-lightbox="gallery-sunsets" data-title="This is the fourth one on my Gallery">
+            <a href="img/Sunsets/20210930_180900.jpg" class="img-relative" data-lightbox="gallery-sunsets" 
+               data-title="This is the fourth one on my Gallery - Rocky Mountains">
+              
               <img src="img/Sunsets/20210930_180900.jpg" class="img-fluid" alt="Sunset 4">
+              
+              <div class="watermark-overlay">© Deven Mhadgut</div>
+              
+              <div class="location-overlay">
+                <i class="fa fa-map-marker"></i> Rocky Mountains
+              </div>
             </a>
           </div>
         </div>
+
         <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
           <div class="box">
-            <a href="img/Sunsets/20211219_172504.jpg" data-lightbox="gallery-sunsets" data-title="This is the fifth one on my Gallery">
+            <a href="img/Sunsets/20211219_172504.jpg" class="img-relative" data-lightbox="gallery-sunsets" 
+               data-title="This is the fifth one on my Gallery - Vail, CO">
+              
               <img src="img/Sunsets/20211219_172504.jpg" class="img-fluid" alt="Sunset 5">
+              
+              <div class="watermark-overlay">© Deven Mhadgut</div>
+              
+              <div class="location-overlay">
+                <i class="fa fa-map-marker"></i> Vail, CO
+              </div>
             </a>
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
           <div class="box">
-            <a href="img/Sunsets/20220211_173941.jpg" data-lightbox="gallery-sunsets" data-title="This is the sixth one on my Gallery">
+            <a href="img/Sunsets/20220211_173941.jpg" class="img-relative" data-lightbox="gallery-sunsets" 
+               data-title="This is the sixth one on my Gallery - Blacksburg, VA">
+              
               <img src="img/Sunsets/20220211_173941.jpg" class="img-fluid" alt="Sunset 6">
+              
+              <div class="watermark-overlay">© Deven Mhadgut</div>
+              
+              <div class="location-overlay">
+                <i class="fa fa-map-marker"></i> Blacksburg, VA
+              </div>
             </a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
+
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/popper/popper.min.js"></script>
@@ -112,13 +217,14 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="contactform/contactform.js"></script>
   <script src="js/main.js"></script>
+
   <script>
     lightbox.option({
       'resizeDuration': 200,
-      'wrapAround': true,       // Allows user to go from last image back to first
-      'fadeDuration': 300,      // Smoother fade in/out
+      'wrapAround': true,
+      'fadeDuration': 300,
       'imageFadeDuration': 300,
-      'disableScrolling': true, // Prevents page scrolling while gallery is open
+      'disableScrolling': true,
       'fitImagesInViewport': true
     })
   </script>
