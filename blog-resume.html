@@ -30,13 +30,24 @@
     /* FORCE the title area to be smaller */
   .intro-single {
     height: auto !important;       /* Overrides the default 350px height */
-    padding-top: 60px !important; /* Keeps space for the navbar so it doesn't overlap */
+    padding-top: 50px !important; /* Keeps space for the navbar so it doesn't overlap */
     padding-bottom: 130px !important;
   }
 
   /* Optional: Adjust the vertical spacing of the text inside if needed */
   .intro-single .intro-content {
     margin-top: 0 !important;
+  }
+  /* Force the PDF to be clickable and sit above other layers */
+  .resume-container {
+    position: relative;
+    z-index: 500; /* High number ensures it's on top */
+  }
+  
+  .resume-container iframe {
+    position: relative;
+    z-index: 501; 
+    pointer-events: auto !important; /* Forces mouse clicks to work */
   }
     </style>
   <!-- =======================================================
