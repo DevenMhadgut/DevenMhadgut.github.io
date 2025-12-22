@@ -27,11 +27,17 @@
     <style>
     /* ... your existing watermark/location styles ... */
 
-    /* REDUCE HEADER HEIGHT */
-    .intro-single {
-      padding-top: 20px !important; /* Enough space to clear the navbar */
-      padding-bottom: 20px !important; /* Less space at the bottom */
-    }
+    /* FORCE the title area to be smaller */
+  .intro-single {
+    height: auto !important;       /* Overrides the default 350px height */
+    padding-top: 130px !important; /* Keeps space for the navbar so it doesn't overlap */
+    padding-bottom: 30px !important;
+  }
+
+  /* Optional: Adjust the vertical spacing of the text inside if needed */
+  .intro-single .intro-content {
+    margin-top: 0 !important;
+  }
     </style>
   <!-- =======================================================
     Theme Name: DevFolio
