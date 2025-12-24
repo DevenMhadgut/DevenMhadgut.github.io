@@ -1422,3 +1422,36 @@ footer a,footer a:hover{
   width: 100%;
   height: auto;
 }
+
+
+  /* ... your existing styles ... */
+
+  /* Styles for the BibTeX Toggle */
+.bibtex-box {
+  display: none;
+  margin-top: 10px;
+  background: #f8f9fa; /* Light grey background */
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  color: #333;
+  overflow-x: auto; /* Adds scrollbar if text is too long */
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.pub-list li {
+  margin-bottom: 25px; /* Spacing between papers */
+}
+
+.pub-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #000;
+}
+
+.pub-venue {
+  font-style: italic;
+  color: #6c757d;
+}
