@@ -1457,13 +1457,13 @@ footer a,footer a:hover{
 .pub-title a {
   font-weight: 700;
   font-size: 1.1rem;
-  color: #0078ff; /* Theme primary color */
+  color: #008080; /* Theme primary color */
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
 .pub-title a:hover {
-  color: #0056b3;
+  color: #016464;
   text-decoration: underline;
 }
 
