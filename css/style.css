@@ -1472,3 +1472,123 @@ footer a,footer a:hover{
   color: #6c757d;
   margin-bottom: 8px;
 }
+
+
+/* --- Pro Carousel Wrapper --- */
+.pro-carousel {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transform: translateZ(0); /* Hardware acceleration */
+}
+
+/* --- Image Handling --- */
+.pro-carousel .carousel-item {
+  height: 400px; /* Fixed height for consistency */
+  background-color: #000; /* Dark background for transparent images */
+}
+
+.pro-carousel .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensures image fills box without stretching */
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Hover Zoom Effect */
+.pro-carousel:hover .carousel-item img {
+  transform: scale(1.05);
+}
+
+/* --- Glassmorphism Caption --- */
+.pro-carousel .carousel-caption {
+  bottom: 20px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5); /* Fallback */
+  background: rgba(25, 25, 25, 0.65);
+  backdrop-filter: blur(12px); /* The "Glass" blur effect */
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(20px);
+  transition: all 0.4s ease-out;
+}
+
+/* Show caption on hover or when active */
+.pro-carousel:hover .carousel-caption,
+.pro-carousel .carousel-item.active .carousel-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pro-carousel .carousel-caption h5 {
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* --- Indicators (Dots) --- */
+.pro-carousel .carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.pro-carousel .carousel-indicators .active {
+  width: 25px; /* Elongate active dot */
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* --- Navigation Arrows --- */
+.pro-carousel .carousel-control-prev,
+.pro-carousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.pro-carousel .carousel-control-prev { left: 15px; }
+.pro-carousel .carousel-control-next { right: 15px; }
+
+.pro-carousel:hover .carousel-control-prev,
+.pro-carousel:hover .carousel-control-next {
+  opacity: 1;
+}
+
+.pro-carousel .carousel-control-prev:hover,
+.pro-carousel .carousel-control-next:hover {
+  background: #fff;
+  color: #000;
+}
+
+.pro-carousel .carousel-control-prev-icon,
+.pro-carousel .carousel-control-next-icon {
+  filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.5));
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .pro-carousel .carousel-item { height: 250px; }
+  .pro-carousel .carousel-caption { padding: 10px; bottom: 10px; }
+  .pro-carousel .carousel-caption h5 { font-size: 0.8rem; }
+}
