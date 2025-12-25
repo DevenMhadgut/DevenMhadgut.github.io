@@ -1597,7 +1597,7 @@ footer a,footer a:hover{
 .list-unstyled li {
     font-size: 1rem;
     line-height: 1.6;
-    color: #c2c2c2; /* Soft white for readability */
+    color: #008080; /* Soft white for readability */
 }
 
 .list-unstyled i {
