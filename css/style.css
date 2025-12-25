@@ -1592,3 +1592,26 @@ footer a,footer a:hover{
   .pro-carousel .carousel-caption { padding: 10px; bottom: 10px; }
   .pro-carousel .carousel-caption h5 { font-size: 0.8rem; }
 }
+
+/* Styling for the new icon-led accomplishment points */
+.list-unstyled li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #c2c2c2; /* Soft white for readability */
+}
+
+.list-unstyled i {
+    font-size: 1.2rem;
+    min-width: 25px; /* Ensures icons align perfectly */
+}
+
+/* Ensure Academicons match your theme's icon circles */
+.ai-google-scholar {
+    font-size: 22px;
+    line-height: 0;
+}
+
+.socials ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
