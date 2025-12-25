@@ -1616,6 +1616,11 @@ footer a,footer a:hover{
     margin-right: 10px;
 }
 
-.list-unstyled i.text-primary {
+/* .list-unstyled i.text-primary {
     color: #008080 !important;
+} */
+
+.icon-teal {
+    color: #008080 !important;
+    margin-right: 15px; /* Keeps your spacing consistent */
 }
