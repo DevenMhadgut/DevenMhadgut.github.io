@@ -1723,3 +1723,8 @@ footer a,footer a:hover{
     background: #008080 !important;
     transform: scale(1.3);
 }
+
+/* Force the carousel to hide overflowing items */
+.owl-carousel .owl-stage-outer {
+    overflow: hidden;
+}
