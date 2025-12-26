@@ -1634,12 +1634,12 @@ footer a,footer a:hover{
 
 /* Image Styling */
 .service-ico {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .service-ico img {
-    width: 80px; 
-    height: 80px;
+    width: 120px; 
+    height: 120px;
     object-fit: contain;
     background: #fff;
     border-radius: 50%;
