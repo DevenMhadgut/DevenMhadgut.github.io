@@ -1728,3 +1728,28 @@ footer a,footer a:hover{
 .owl-carousel .owl-stage-outer {
     overflow: hidden;
 }
+
+/* --- Experience Carousel Updates --- */
+
+/* 1. Make the images bigger */
+.service-ico img {
+    width: 120px !important;  /* Increased from 80px */
+    height: 120px !important; /* Increased from 80px */
+    padding: 10px !important; /* Add breathing room inside the ring */
+}
+
+/* 2. Force White Background (Overrides Dark Mode) */
+.service-box, 
+[data-bs-theme="dark"] .service-box {
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0; /* Adds a clean border for contrast */
+}
+
+/* 3. Fix Text Colors (Dark text on White background) */
+[data-bs-theme="dark"] .service-box .s-title {
+    color: #1e1e1e !important; /* Dark Black */
+}
+
+[data-bs-theme="dark"] .service-box .s-description {
+    color: #4e4e4e !important; /* Dark Gray */
+}
