@@ -211,88 +211,93 @@
 				<section id="service" class="services-mf route">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-12">
-								<div class="title-box text-center">
-									<h3 class="title-a">PROFESSIONAL EXPERIENCE</h3>
-									<div class="line-mf"></div>
-								</div>
+						<div class="col-sm-12">
+							<div class="title-box text-center">
+							<h3 class="title-a">PROFESSIONAL EXPERIENCE</h3>
+							<div class="line-mf"></div>
 							</div>
 						</div>
-						
-						<div id="experience-carousel" class="owl-carousel owl-theme">
+						</div>
+
+						<div class="row">
+						<div class="col-sm-12">
+							<div id="experience-carousel" class="owl-carousel owl-theme">
 							
 							<div class="service-box">
 								<div class="service-ico">
-									<a href="https://www.benchmarkspacesystems.com" target="_blank">
-										<img src="img/BSSlogo.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									</a>
+								<a href="https://www.benchmarkspacesystems.com" target="_blank">
+									<img src="img/BSSlogo.jpg" class="img-fluid rounded b-shadow-a" alt="Benchmark Space Systems">
+								</a>
 								</div>
 								<div class="service-content">
-									<h2 class="s-title">Mechanical Analysis Intern</h2>
-									<p class="s-description text-center">
-										Fluid–structure, vibration, thermal, and structural analyses for fuel tank slosh, hyperelastic diaphragm dynamics, shaker test evaluation, and PCBA reliability.
-									</p>
+								<h2 class="s-title">Mechanical Analysis Intern</h2>
+								<p class="s-description text-center">
+									Fluid–structure, vibration, thermal, and structural analyses for fuel tank slosh, hyperelastic diaphragm dynamics, shaker test evaluation, and PCBA reliability.
+								</p>
 								</div>
 							</div>
 
 							<div class="service-box">
 								<div class="service-ico">
-									<a href="https://www.space.vt.edu" target="_blank">
-										<img src="img/spaceatvtlogo2.png" class="img-fluid rounded b-shadow-a" alt="">
-									</a>
+								<a href="https://www.space.vt.edu" target="_blank">
+									<img src="img/spaceatvtlogo2.png" class="img-fluid rounded b-shadow-a" alt="Virginia Tech Space">
+								</a>
 								</div>
 								<div class="service-content">
-									<h2 class="s-title">GRADUATE RESEARCH ASSISTANT</h2>
-									<p class="s-description text-center">
-										Deployment and structural dynamics of a bistable composite boom onboard a 3U CubeSat.
-									</p>
+								<h2 class="s-title">Graduate Research Assistant</h2>
+								<p class="s-description text-center">
+									Deployment and structural dynamics of a bistable composite boom onboard a 3U CubeSat.
+								</p>
 								</div>
 							</div>
 
 							<div class="service-box">
 								<div class="service-ico">
-									<a href="https://culair.weebly.com/lair-lab.html" target="_blank">
-										<img src="img/lair-logo4.png" class="img-fluid rounded b-shadow-a" alt="">
-									</a>
+								<a href="https://culair.weebly.com/lair-lab.html" target="_blank">
+									<img src="img/lair-logo4.png" class="img-fluid rounded b-shadow-a" alt="LAIR Lab">
+								</a>
 								</div>
 								<div class="service-content">
-									<h2 class="s-title">MECHANICAL DESIGN ENGINEER</h2>
-									<p class="s-description text-center">
-										Structural and thermal subsystem of the Atmosphere Effects of Precipitation through Energetic X-rays (AEPEX) Mission.
-									</p>
+								<h2 class="s-title">Mechanical Design Engineer</h2>
+								<p class="s-description text-center">
+									Structural and thermal subsystem of the Atmosphere Effects of Precipitation through Energetic X-rays (AEPEX) Mission.
+								</p>
 								</div>
 							</div>
 
 							<div class="service-box">
 								<div class="service-ico">
-									<a href="https://lasp.colorado.edu" target="_blank">
-										<img src="img/lasplogo.png" class="img-fluid rounded b-shadow-a" alt="">
-									</a>
+								<a href="https://lasp.colorado.edu" target="_blank">
+									<img src="img/lasplogo.png" class="img-fluid rounded b-shadow-a" alt="LASP">
+								</a>
 								</div>
 								<div class="service-content">
-									<h2 class="s-title">PROFESSIONAL RESEARCH ASSISTANT</h2>
-									<p class="s-description text-center">
-										Design and analysis of the CANVAS (VLF wave activity in Space) CubeSat bus.
-									</p>
+								<h2 class="s-title">Professional Research Assistant</h2>
+								<p class="s-description text-center">
+									Design and analysis of the CANVAS (VLF wave activity in Space) CubeSat bus.
+								</p>
 								</div>
 							</div>
 
 							<div class="service-box">
 								<div class="service-ico">
-									<a href="https://www.airindia.com" target="_blank">
-										<img src="img/airindialogo.png" class="img-fluid rounded b-shadow-a" alt="">
-									</a>
+								<a href="https://www.airindia.com" target="_blank">
+									<img src="img/airindialogo.png" class="img-fluid rounded b-shadow-a" alt="Air India">
+								</a>
 								</div>
 								<div class="service-content">
-									<h2 class="s-title">INTERN, BASE MAINTENANCE</h2>
-									<p class="s-description text-center">
-										Cargo compartment maintenance, change of landing gears, and measurement of tire pressure for commercial aircraft.
-									</p>
+								<h2 class="s-title">Intern, Base Maintenance</h2>
+								<p class="s-description text-center">
+									Cargo compartment maintenance, change of landing gears, and measurement of tire pressure for commercial aircraft.
+								</p>
 								</div>
 							</div>
 
-						</div> </div>
-				</section>
+							</div>
+						</div>
+						</div>
+					</div>
+					</section>
 
 				<div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.png)">
 					<div class="overlay-mf"></div>
@@ -1492,6 +1497,31 @@
 
 				<!-- Template Main Javascript File -->
 				<script src="js/main.js"></script>
-
+				<script>
+				$(document).ready(function(){
+					$('#experience-carousel').owlCarousel({
+						margin: 20,
+						autoplay: true,
+						autoplayTimeout: 4000,
+						autoplayHoverPause: true,
+						loop: true, // Allows continuous scrolling
+						nav: true,
+						dots: true,
+						smartSpeed: 1000,
+						navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+						responsive: {
+							0: {
+								items: 1, // 1 item on phone
+							},
+							768: {
+								items: 2, // 2 items on tablet
+							},
+							992: {
+								items: 3, // 3 items on desktop
+							}
+						}
+					});
+				});
+				</script>
 </body>
 </html>
