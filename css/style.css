@@ -1779,3 +1779,8 @@ footer a,footer a:hover{
 .owl-dots {
     margin-top: 25px !important;
 }
+
+/* Justify all paragraphs */
+p {
+    text-align: justify;
+}
