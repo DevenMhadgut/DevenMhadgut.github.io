@@ -1624,3 +1624,36 @@ footer a,footer a:hover{
     color: #008080 !important;
     margin-right: 25px; /* Keeps your spacing consistent */
 }
+
+/* Custom Carousel Styling */
+#experience-carousel .owl-nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#experience-carousel .owl-nav button {
+    font-size: 30px !important;
+    color: #008080 !important; /* Teal */
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+#experience-carousel .owl-nav button:hover {
+    color: #004d4d !important;
+    background: none !important;
+}
+
+#experience-carousel .owl-dots .owl-dot span {
+    background: #ccc;
+    width: 12px;
+    height: 12px;
+}
+
+#experience-carousel .owl-dots .owl-dot.active span {
+    background: #008080 !important; /* Active dot is Teal */
+}
+
+#experience-carousel .service-box {
+    margin-bottom: 10px; /* Adjust spacing inside carousel */
+    height: 100%; /* Ensures all boxes are same height */
+}

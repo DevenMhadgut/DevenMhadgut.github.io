@@ -114,4 +114,30 @@
 		}
 	});
 
+	/* Experience Carousel */
+	$('#experience-carousel').owlCarousel({
+		margin: 30,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+				nav: false,
+				dots: true
+			},
+			768: {
+				items: 2,
+				nav: false,
+				dots: true
+			},
+			1024: {
+				items: 3, // Shows 3 for better spacing, can be set to 4
+				nav: true,
+				dots: true,
+				navText: ['<span class="ion-ios-arrow-back"></span>', '<span class="ion-ios-arrow-forward"></span>']
+			}
+		}
+	});
+
 })(jQuery);
