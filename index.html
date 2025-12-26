@@ -1504,20 +1504,21 @@
 						autoplay: true,
 						autoplayTimeout: 4000,
 						autoplayHoverPause: true,
-						loop: true, // Allows continuous scrolling
-						nav: true,
-						dots: true,
 						smartSpeed: 1000,
+						dots: true,
+						dotsEach: true,  /* <--- This forces 1 dot per item */
+						nav: true,
 						navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+						loop: true,      /* Continuous scrolling */
 						responsive: {
 							0: {
-								items: 1, // 1 item on phone
+								items: 1, // Phones: Show 1, hide 4
 							},
 							768: {
-								items: 2, // 2 items on tablet
+								items: 2, // Tablets: Show 2, hide 3
 							},
 							992: {
-								items: 3, // 3 items on desktop
+								items: 3, // Desktops: Show 3, hide 2
 							}
 						}
 					});
