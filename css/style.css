@@ -1733,8 +1733,8 @@ footer a,footer a:hover{
 
 /* 1. Make the images bigger */
 .service-ico img {
-    width: 120px !important;  /* Increased from 80px */
-    height: 120px !important; /* Increased from 80px */
+    width: 100px !important;  /* Increased from 80px */
+    height: 100px !important; /* Increased from 80px */
     padding: 10px !important; /* Add breathing room inside the ring */
 }
 
