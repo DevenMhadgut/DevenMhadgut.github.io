@@ -1750,8 +1750,5 @@ footer a,footer a:hover{
     color: #4e4e4e !important; /* Dark Gray */
 }
 
-/* Optimize spacing for wider look */
-.service-box {
-    padding: 2rem 1rem !important; /* Reduces side padding to give text more room */
-}
+
 
