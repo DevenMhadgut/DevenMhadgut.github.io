@@ -1734,7 +1734,7 @@ footer a,footer a:hover{
 /* 1. Make the images bigger */
 .service-ico img {
     width: 100px !important;  /* Increased from 80px */
-    height: 100px !important; /* Increased from 80px */
+    height: auto !important; /* Increased from 80px */
     padding: 10px !important; /* Add breathing room inside the ring */
 }
 
@@ -1753,3 +1753,9 @@ footer a,footer a:hover{
 [data-bs-theme="dark"] .service-box .s-description {
     color: #4e4e4e !important; /* Dark Gray */
 }
+
+/* Optimize spacing for wider look */
+.service-box {
+    padding: 2rem 1rem !important; /* Reduces side padding to give text more room */
+}
+
