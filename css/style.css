@@ -1615,7 +1615,7 @@ footer a,footer a:hover{
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 50%;
+    height: 100%;
     border: 1px solid rgba(0,0,0,0.03);
     /* Ensure box doesn't overflow margins */
     width: 50%; 
