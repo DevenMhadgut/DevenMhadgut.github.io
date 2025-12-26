@@ -1646,10 +1646,7 @@ footer a,footer a:hover{
 }
 
 /* Dark Mode Adjustment */
-[data-bs-theme="dark"] .service-box {
-    background-color: #2b2b2b; /* Matches your dark theme */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
+
 
 /* Hover Effect: Lift up */
 .service-box:hover {
