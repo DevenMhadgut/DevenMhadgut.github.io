@@ -1749,7 +1749,7 @@ footer a,footer a:hover{
 /* 2. Card Sizing & Spacing */
 .service-box {
     padding: 2.5rem 1rem !important; /* Reduces side padding to give text more room */
-    height: 100%; /* Ensures all cards are same height */
+    height: 80%; /* Ensures all cards are same height */
     margin-bottom: 0 !important; /* Removes bottom gap */
     background-color: #ffffff !important; /* Force White Background */
     border: 1px solid #e0e0e0;
