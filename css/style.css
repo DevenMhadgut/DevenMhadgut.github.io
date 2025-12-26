@@ -1735,19 +1735,6 @@ footer a,footer a:hover{
 
 
 /* 2. Force White Background (Overrides Dark Mode) */
-.service-box, 
-[data-bs-theme="dark"] .service-box {
-    background-color: #ffffff !important;
-}
-
-/* 3. Fix Text Colors (Dark text on White background) */
-[data-bs-theme="dark"] .service-box .s-title {
-    color: #1e1e1e !important; /* Dark Black */
-}
-
-[data-bs-theme="dark"] .service-box .s-description {
-    color: #4e4e4e !important; /* Dark Gray */
-}
 
 
 
