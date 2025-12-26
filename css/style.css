@@ -1638,8 +1638,8 @@ footer a,footer a:hover{
 }
 
 .service-ico img {
-    width: 120px; 
-    height: 120px;
+    width: 80px; 
+    height: 80px;
     object-fit: contain;
     background: #fff;
     border-radius: 50%;
