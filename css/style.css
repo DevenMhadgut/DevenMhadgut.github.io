@@ -1738,3 +1738,44 @@ footer a,footer a:hover{
 
 
 
+/* --- FINAL CAROUSEL FIXES --- */
+
+/* 1. Widen the container so 3 items fit comfortably */
+#service .container {
+    max-width: 95% !important; /* Expands to use full screen width */
+    width: 100%;
+}
+
+/* 2. Card Sizing & Spacing */
+.service-box {
+    padding: 2.5rem 1rem !important; /* Reduces side padding to give text more room */
+    height: 100%; /* Ensures all cards are same height */
+    margin-bottom: 0 !important; /* Removes bottom gap */
+    background-color: #ffffff !important; /* Force White Background */
+    border: 1px solid #e0e0e0;
+}
+
+/* 3. Make Images Bigger (120px) */
+.service-ico img {
+    width: 120px !important;
+    height: 120px !important;
+    padding: 10px !important; /* Internal spacing for the ring */
+}
+
+/* 4. Fix Text Colors for White Background */
+.service-box .s-title,
+[data-bs-theme="dark"] .service-box .s-title {
+    color: #1e1e1e !important; /* Dark Black Title */
+    font-size: 1.1rem; /* Optimal size for 3-column layout */
+}
+
+.service-box .s-description,
+[data-bs-theme="dark"] .service-box .s-description {
+    color: #4e4e4e !important; /* Dark Gray Text */
+    font-size: 0.95rem;
+}
+
+/* 5. Center the dots at the bottom */
+.owl-dots {
+    margin-top: 25px !important;
+}
