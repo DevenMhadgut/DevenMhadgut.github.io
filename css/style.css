@@ -1793,3 +1793,29 @@ p {
     text-align: justify;
 }
 
+/* --- Clickable Resume Box Styling --- */
+
+/* Remove default link styling from the wrapper */
+.resume-box-link {
+    display: block; /* Ensures it wraps the div correctly */
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Smooth transition for the title color */
+.resume-box-link .card-title {
+    color: #1e1e1e;
+    transition: all 0.5s ease-in-out;
+}
+
+/* When hovering anywhere on the box, turn the title Teal */
+.resume-box-link:hover .card-title {
+    color: #008080;
+}
+
+/* Optional: Add a subtle lift effect to the whole card on hover */
+.resume-box-link:hover .card-blog {
+    transform: translateY(-5px);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 15px 30px rgba(0, 128, 128, 0.15); /* Teal shadow */
+}
