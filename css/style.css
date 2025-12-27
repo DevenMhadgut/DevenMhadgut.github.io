@@ -1456,7 +1456,7 @@ footer a,footer a:hover{
 /* --- Image Handling --- */
 .pro-carousel .carousel-item {
   height: 400px; /* Fixed height for consistency */
-  background-color: #000; /* Dark background for transparent images */
+  background-color: #ffffff; /* Dark background for transparent images */
 }
 
 .pro-carousel .carousel-item img {
