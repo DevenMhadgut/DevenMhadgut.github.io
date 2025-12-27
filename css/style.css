@@ -1786,3 +1786,12 @@ footer a,footer a:hover{
 p {
     text-align: justify;
 }
+
+/* Left-aligned line for Resume section */
+.line-mf-left {
+    width: 40px;
+    height: 5px;
+    background-color: #008080;
+    margin: 0; /* Removes 'auto' which was centering it */
+    display: block;
+}
