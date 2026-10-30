@@ -7,7 +7,15 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
   <script>
-    document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('theme') || 'light');
+    (function () {
+      var theme = 'light';
+      try {
+        theme = window.localStorage.getItem('theme') || 'light';
+      } catch (error) {
+        console.warn('Theme preference storage is unavailable.', error);
+      }
+      document.documentElement.setAttribute('data-bs-theme', theme);
+    }());
   </script>
 
   <!-- Favicons -->
@@ -1743,7 +1751,11 @@
 					$themeToggle.on('click', function() {
 						var nextTheme = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
 						document.documentElement.setAttribute('data-bs-theme', nextTheme);
-						localStorage.setItem('theme', nextTheme);
+						try {
+							window.localStorage.setItem('theme', nextTheme);
+						} catch (error) {
+							console.warn('Theme preference could not be saved.', error);
+						}
 						updateThemeToggle(nextTheme);
 					});
 				});
