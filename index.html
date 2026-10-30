@@ -1,11 +1,14 @@
 ﻿<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 <head>
   <meta charset="utf-8">
   <title>Deven Mhadgut</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+  <script>
+    document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('theme') || 'light');
+  </script>
 
   <!-- Favicons -->
   <link href="img/favicon.ico" rel="icon">
@@ -74,6 +77,15 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item theme-toggle-item">
+						<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+							<span class="theme-toggle-track" aria-hidden="true">
+								<i class="fa fa-sun-o"></i>
+								<i class="fa fa-moon-o"></i>
+								<span class="theme-toggle-thumb"></span>
+							</span>
+						</button>
 					</li>
                     <!-- 
 					<li class="nav-item">
@@ -1718,6 +1730,24 @@
 				<!-- Template Main Javascript File -->
 				<script src="js/main.js"></script>
 				<script>
+				$(document).ready(function(){
+					var $themeToggle = $('#theme-toggle');
+
+					function updateThemeToggle(theme) {
+						var isDark = theme === 'dark';
+						$themeToggle.attr('aria-pressed', isDark);
+						$themeToggle.attr('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+					}
+
+					updateThemeToggle(document.documentElement.getAttribute('data-bs-theme'));
+					$themeToggle.on('click', function() {
+						var nextTheme = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+						document.documentElement.setAttribute('data-bs-theme', nextTheme);
+						localStorage.setItem('theme', nextTheme);
+						updateThemeToggle(nextTheme);
+					});
+				});
+
 				$(document).ready(function(){
 					$('#experience-carousel').owlCarousel({
 						margin: 10,
